@@ -1,0 +1,45 @@
+.good {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p {
+        margin: 0;
+    }
+}
+.good__item {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 25px;
+    .center();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 45px;
+    cursor: pointer;
+    img {
+        align-self: center;
+    }
+}
+.money {
+    background: @blue;
+}
+.wallet {
+    background: @purple;
+}
+.briefcase {
+    background: @pink;
+}
+.good__name {
+    opacity: 1;
+    color: white;
+}
+.good__describe {
+    background: @dark-blue-transparent;
+    text-align: left;
+}
+.good__btn {
+    .btn();
+    .uppercase();
+    width: 220px;
+    background: @pink;
+}

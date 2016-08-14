@@ -1,0 +1,20 @@
+.page-header {
+    padding: 0 170px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-header__link {
+    position: relative;
+    .set-font(14px; @pink; normal; normal);
+    &::after {
+        content: '';
+        position: absolute;
+        background: url("../img/arrow-right.png") no-repeat;
+        width: 16px;
+        height: 9px;
+        right: -31px;
+        top: 4px;
+    }
+}

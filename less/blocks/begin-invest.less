@@ -1,0 +1,40 @@
+.begin-invest {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+}
+.begin-invest__good {
+    display: flex;
+    justify-content: space-between;
+}
+.begin-invest__btn {
+    .btn();
+    color: @dark-blue;
+    .uppercase();
+    width: 240px;
+    border: 2px solid @dark-blue;
+}
+.begin-invest__title {
+    .set-font(30px; @blue-font; 700; normal);
+}
+.begin-invest__item {
+    flex-basis: 27%;
+    &:first-child {
+        .set-font(12px; @blue; normal; 16px);
+        span {
+            .set-font(72px; @blue; 700; normal);
+        }
+    }
+    &:nth-child(2) {
+        .set-font(12px; @purple; normal; 16px);
+        span {
+            .set-font(72px; @purple; 700; normal);
+        }
+    }
+    &:nth-child(3) {
+        .set-font(12px; @pink; normal; 16px);
+        span {
+            .set-font(72px; @pink; 700; normal);
+        }
+    }
+}
